@@ -170,9 +170,5 @@ namespace Notifications
             MessageBox.Show(text, "секретная ачивка", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void panelSecret_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
