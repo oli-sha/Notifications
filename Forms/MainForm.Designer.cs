@@ -2,12 +2,15 @@
 {
     partial class MainForm
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private TextBox txtMessage;
-        private ComboBox cmbServiceType;
-        private Button btnSend;
-        private RichTextBox rtbLog;
-        
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -17,77 +20,93 @@
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            txtMessage = new TextBox();
-            cmbServiceType = new ComboBox();
-            btnSend = new Button();
-            rtbLog = new RichTextBox();
-            SuspendLayout();
+            this.txtMessage = new System.Windows.Forms.TextBox();
+            this.cmbServiceType = new System.Windows.Forms.ComboBox();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.rtbLog = new System.Windows.Forms.RichTextBox();
+            this.SuspendLayout();
             // 
             // txtMessage
             // 
-            txtMessage.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtMessage.BackColor = Color.FromArgb(192, 192, 255);
-            txtMessage.Location = new Point(49, 48);
-            txtMessage.Margin = new Padding(5);
-            txtMessage.Name = "txtMessage";
-            txtMessage.Size = new Size(911, 39);
-            txtMessage.TabIndex = 1;
-            txtMessage.KeyPress += TxtMessage_KeyPress;
+            this.txtMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtMessage.Location = new System.Drawing.Point(49, 48);
+            this.txtMessage.Margin = new System.Windows.Forms.Padding(5);
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(911, 39);
+            this.txtMessage.TabIndex = 1;
+            this.txtMessage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtMessage_KeyPress);
             // 
             // cmbServiceType
             // 
-            cmbServiceType.BackColor = Color.FromArgb(192, 192, 255);
-            cmbServiceType.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbServiceType.Location = new Point(49, 128);
-            cmbServiceType.Margin = new Padding(5);
-            cmbServiceType.Name = "cmbServiceType";
-            cmbServiceType.Size = new Size(371, 40);
-            cmbServiceType.TabIndex = 0;
-            cmbServiceType.SelectedIndexChanged += CmbServiceType_SelectedIndexChanged;
+            this.cmbServiceType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.cmbServiceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbServiceType.Location = new System.Drawing.Point(49, 128);
+            this.cmbServiceType.Margin = new System.Windows.Forms.Padding(5);
+            this.cmbServiceType.Name = "cmbServiceType";
+            this.cmbServiceType.Size = new System.Drawing.Size(371, 40);
+            this.cmbServiceType.TabIndex = 0;
+            this.cmbServiceType.SelectedIndexChanged += new System.EventHandler(this.CmbServiceType_SelectedIndexChanged);
             // 
             // btnSend
             // 
-            btnSend.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnSend.BackColor = Color.FromArgb(192, 192, 255);
-            btnSend.Location = new Point(1007, 48);
-            btnSend.Margin = new Padding(5);
-            btnSend.Name = "btnSend";
-            btnSend.Size = new Size(196, 122);
-            btnSend.TabIndex = 2;
-            btnSend.Text = "Отправить уведомление";
-            btnSend.UseVisualStyleBackColor = false;
-            btnSend.Click += BtnSend_Click;
+            this.btnSend.Anchor = (System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right);
+            this.btnSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSend.Location = new System.Drawing.Point(1007, 48);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(196, 122);
+            this.btnSend.TabIndex = 2;
+            this.btnSend.Text = "Отправить уведомление";
+            this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.BtnSend_Click);
             // 
             // rtbLog
             // 
-            rtbLog.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            rtbLog.BackColor = Color.FromArgb(192, 192, 255);
-            rtbLog.Location = new Point(49, 229);
-            rtbLog.Margin = new Padding(5);
-            rtbLog.Name = "rtbLog";
-            rtbLog.ReadOnly = true;
-            rtbLog.Size = new Size(1154, 692);
-            rtbLog.TabIndex = 3;
-            rtbLog.Text = "";
+            this.rtbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtbLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.rtbLog.Location = new System.Drawing.Point(49, 229);
+            this.rtbLog.Margin = new System.Windows.Forms.Padding(5);
+            this.rtbLog.Name = "rtbLog";
+            this.rtbLog.ReadOnly = true;
+            this.rtbLog.Size = new System.Drawing.Size(1154, 692);
+            this.rtbLog.TabIndex = 3;
+            this.rtbLog.Text = "";
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(128, 128, 255);
-            ClientSize = new Size(1271, 987);
-            Controls.Add(rtbLog);
-            Controls.Add(btnSend);
-            Controls.Add(cmbServiceType);
-            Controls.Add(txtMessage);
-            Margin = new Padding(5);
-            Name = "MainForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Уведомления";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1271, 987);
+            this.Controls.Add(this.rtbLog);
+            this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.cmbServiceType);
+            this.Controls.Add(this.txtMessage);
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Уведомления";
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox txtMessage;
+        private System.Windows.Forms.ComboBox cmbServiceType;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.RichTextBox rtbLog;
     }
 }
